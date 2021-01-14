@@ -6,7 +6,10 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader
-require 'C:\xampp\composer\vendor\autoload.php';
+require 'PHPMailer/src/PHPMailer.php'
+require 'PHPMailer/src/SMTP.php'
+require 'PHPMailer/src/Exception.php'
+require 'PHPMailer/src/autoload.php'
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
