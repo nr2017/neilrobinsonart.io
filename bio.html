@@ -16,34 +16,38 @@
 </head>
 <body>
 
-
 <!-- navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-blue-grey w3-card">
+  <div class="w3-bar w3-blue-gray w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><strong>NEIL ROBINSON</strong></a>
-    <a href="bio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>biography</b></a>
-	<a href="exhibit.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">exhibitions</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">NEIL ROBINSON</a>
+    <a href="bio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">biography</a>
     <a href="prints.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">printmaking</a>
-	<a href="paintings.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">paintings</a>
-	<a href="sketches.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">sketches</a>
-    <a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">blog</a>
-	<a href="shop.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">shop</a>
-	<a href="links.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">links</a>
-	<a href="contact_me.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">contact me</a>
-	</i><button onclick="darkFunction()" class="fa fa-adjust w3-bar-item w3-button w3-padding-16 w3-hide-small"></button>
-	
+    <a href="paintings.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">paintings</a>
+    <a href="sketches.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">sketches</a>  
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">more... <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="exhibit.html" class="w3-bar-item w3-button">exhibitions</a>
+		<a href="blog.html" class="w3-bar-item w3-button">blog</a>
+		<a href="shop.html" class="w3-bar-item w3-button">shop</a>
+        <a href="links.html" class="w3-bar-item w3-button">links</a>
+        <a href="contact_me.html" class="w3-bar-item w3-button">contact me</a>
+      </div>
+    </div>
+    </i><button onclick="darkFunction()" class="fa fa-adjust w3-bar-item w3-button w3-padding-16 w3-hide-small w3-right"></button>
   </div>
 </div>
+
 <script src="navBar.js"></script>
 
 <!-- navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navBar" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="bio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><b>biography</b></a>
-  <a href="exhibit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">exhibitions</a>
   <a href="prints.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">printmaking</a>
   <a href="paintings.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">paintings</a>
   <a href="sketches.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">sketches</a>
+  <a href="exhibit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">exhibitions</a>
   <a href="blog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">blog</a>
   <a href="shop.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">shop</a>
   <a href="links.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">links</a>
