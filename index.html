@@ -95,7 +95,7 @@ Over the last few decades, I have exhibited and sold my printmaking and painting
 </div>
 
 <!-- page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div id="mySlides" class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- automatic slideshow images -->
   <div class="mySlides w3-display-container w3-center">
@@ -139,23 +139,7 @@ Over the last few decades, I have exhibited and sold my printmaking and painting
   <br></br>
 </footer>
 
-<script>
-// automatic slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-</script>
+<script src="carousel.js"></script>
 
 </body>
 </html>
