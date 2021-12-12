@@ -6,7 +6,15 @@ body {
   font-size: 14px;
 }
 
-.dark-mode {
+.dark {
   background-color: black;
   color: white;
 }
+
+ .toggle {
+     cursor: pointer;
+     position: top;
+     top: 0px;
+     right: 5px;
+     color: white;
+ }
