@@ -45,13 +45,13 @@
 		}   
 		let = error;
 		if (isNaN(total) || (total) < 1 ) {
-			  errorElem.innerHTML = "Enter at least one amount no less than &pound1.00. " + "<br>" + "Decimal points accepted, no commas allowed.";
+			  errorElem.innerHTML = "Enter amounts above. Where no amount is required input zero. " + "<br>" + "Decimal points accepted, no commas allowed.";
 		
 		} else if (total > 10000 ) {
 			  errorElem.innerHTML = "Warning: A total of &pound" + Math.round(total) + " will require extra insurance cover if over £10k.";
 		
 		} else {	
-			   errorElem.innerHTML = "";
+			   errorElem.innerHTML = "Enter at least a &pound1.00";
 		
 		totalOutputElem.innerHTML = "Production & Framing costs = &pound" + result.toFixed(2) + "<br>" + "<br>"
 		+ "Total costs (including gallery commission and desired profit) = &pound" + total.toFixed(2);
