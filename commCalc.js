@@ -33,16 +33,17 @@
 		var errorElem = document.getElementById("error");
 		var commissionErrorElem = document.getElementById("percentage");
 		
+		let = percentage;
 		if (isNaN(commission) || (commission) < 1 ) {
-			  commissionErrorElem.innerHTML = "Enter a commission rate between 1% and 50%.";
+			  commissionErrorElem.innerHTML = "Enter a minimum of 1% commission.";
 		
-		} else if (commission > 50 ) {
-			  commissionErrorElem.innerHTML = "You can only enter a maximum of 50% commission.";
+		} else if (commission > 60 ) {
+			  commissionErrorElem.innerHTML = "Enter a maximum of 60% commission.";
 		
 		} else {	
 			   commissionErrorElem.innerHTML = "";	
 		}   
-		
+		let = error;
 		if (isNaN(total) || (total) < 1 ) {
 			  errorElem.innerHTML = "Enter at least one amount no less than &pound1.00. " + "<br>" + "Decimal points accepted, no commas allowed.";
 		
