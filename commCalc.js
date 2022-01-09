@@ -1,7 +1,7 @@
 // Author: neil robinson
 // Function to calculate total price of artwork
 // Date: 30th May 2021
-// Revision: 8th January 2022
+// Revision: 9th January 2022
 
 // Calculate button
 	window.addEventListener("load", function() {
