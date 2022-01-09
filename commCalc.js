@@ -51,7 +51,7 @@
 			  errorElem.innerHTML = "Warning: A total of &pound" + Math.round(total) + " will require extra insurance cover if over £10k.";
 		
 		} else {	
-			   errorElem.innerHTML = "Enter at least a &pound1.00";
+			   errorElem.innerHTML = "";
 		
 		totalOutputElem.innerHTML = "Production & Framing costs = &pound" + result.toFixed(2) + "<br>" + "<br>"
 		+ "Total costs (including gallery commission and desired profit) = &pound" + total.toFixed(2);
