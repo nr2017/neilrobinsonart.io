@@ -4,7 +4,6 @@
 
 body {
   background-color: #f1f1f1;
-  padding: 0px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -14,9 +13,10 @@ body {
   margin: auto;
 }
 
-h1 {
-  font-size: 50px;
+h2 {
+  font-family: "Trebuchet MS", sans-serif
   word-break: break-all;
+  text-align: center;
 }
 
 .row {
@@ -62,6 +62,7 @@ h1 {
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  text-align: center;
 }
 
 /* Add a grey background color on mouse-over */
