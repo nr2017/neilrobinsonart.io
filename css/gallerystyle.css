@@ -7,17 +7,17 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+h2 {
+  font-family: "Raleway", sans-serif;
+  word-break: break-all;
+}
+
 /* Center website */
 .main {
   max-width: 1000px;
   margin: auto;
 }
 
-h2 {
-  font-family: "Trebuchet MS", sans-serif;
-  word-break: break-all;
-  text-align: center;
-}
 
 .row {
   margin: 8px -16px;
