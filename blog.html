@@ -3,6 +3,7 @@
 <head>
 <title>neilrobinson.me.uk :: blog - Stockport in Print - printmaking project</title>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Neil Robinson, Art/Printmaker specialising in landscapes and seascapes. I work with intaglio printing techniques such as etching aquatint and relief techniques such as linocut.">
 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
@@ -11,43 +12,48 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/modalStyle.css">
 <link rel="stylesheet" href="css/nar_stylesheet.css">
 <link rel="stylesheet" href="css/darkmode.css">
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" /> <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png"/>
 </head>
 <body>
-
 <!-- navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-blue-gray w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">NEIL ROBINSON</a>
-    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">gallery</a>  
-    <a href="exhibit.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">exhibitions</a>
-	<a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>blog</b></a>
-	<a href="shop.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">shop</a>
-    <a href="links.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">links</a>
-    <a href="contact_me.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">contact me</a>
-		
-		<!--<div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">more... <i class="fa fa-caret-down"></i></button>    
-      <div class="w3-dropdown-content w3-bar-block w3-card-4"> -->
-		
-	<i class="toggle fa fa-adjust w3-bar-item w3-button w3-padding-16 w3-hide-small w3-right"></i>
-	<script src="darkFunction.js"></script>
-    </div>
-    </div>
 
-<script src="navBar.js"></script>
-
-<!-- navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navBar" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">gallery</a>
-  <a href="exhibit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">exhibitions</a>
-  <a href="blog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><b>blog</b></a>
-  <a href="shop.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">shop</a>
-  <a href="links.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">links</a>
-  <a href="contact_me.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contact me</a>
+<body>
+ <div class="w3-top">
+   <nav class="navbar">
+     <!-- LOGO -->
+	 <img src="images/NR_new_logo.png" style="width:2%"/>
+     <a href="index.html" class="logo w3-bar-item w3-button">neilrobinson</a>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+             <li><a href="exhibit.html" class="w3-bar-item w3-button">exhibitions</a></li>
+             <li><a href="blog.html" class="w3-bar-item w3-button">blog</a></li>
+             <li><a href="shop.html" class="w3-bar-item w3-button">shop</a></li>	 
+         <li class="services">
+           <a href="galleries.html" class="w3-bar-item w3-button">galleries</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+				<li><a href="prints.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">printmaking</a></li>
+				<li><a href="paintings.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">paintings</a></li>
+				<li><a href="sketches.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">sketches</a></li>
+			 
+           </ul>
+         </li>
+         <li><a href="links.html" class="w3-bar-item w3-button">links</a></li>
+         <li><a href="contact_me.html" class="w3-bar-item w3-button">contact me</a></li>
+       </div>
+     </ul>
+	 	<i class="toggle fa fa-adjust w3-bar-item w3-button w3-padding-16 w3-hide-small w3-right"></i>
+	<script src="js/darkFunction.js"></script>
+   </nav>
 </div>
 
 <!-- page content -->
@@ -62,18 +68,14 @@
 	<img src="images/sip_logo.jpg" alt="Stockport In Print logo" class="w3-image" width="150" height="150"></a>
 	<br></br>
     <p class="w3-justify">This blog is based around my printmaking project. My work depicts the diverse architectural styles of my hometown and the surrounding landmarks new and old. I like to experiment with different types of print-making from screen-printing to chine colle. In time, I hope to produce a book and ultimately hold an exhibition of my prints at the town’s art gallery at some point in the near future. I have already produced a number of prints related to Stockport and it’s past. You can view my work on the Print Gallery page of this website.
-			Please visit my blog <a href="http://www.stockportinprint.com" target="_blank">Stockport In Print</a>
-
-	<p>If you have a Facebook or WordPress account, you can subscribe to my latest posts.</p>
+	Please visit my blog <a href="http://www.stockportinprint.com" target="_blank">Stockport In Print</a>
+    
+	If you have a Facebook or WordPress account, you can subscribe to my latest posts.</p>
     <br>
 	<a href="https://www.stockportinprint.com" target="_blank">
 	<img src="images/SiP-slideshow.gif" alt="Stockport In Print slideshow GIF" class="w3-image" width="150" height="150"></a>
 	</br>
-
-</div>
-  
-  
-  
+	
 <!-- end of page content -->
 </div>
 
