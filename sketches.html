@@ -23,8 +23,8 @@
   <div class="w3-bar w3-blue-gray w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">NEIL ROBINSON</a>
-    <a href="prints.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>printmaking</b></a>  
-	<a href="paintings.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>paintings</b></a>
+    <a href="prints.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">printmaking</a>  
+	<a href="paintings.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">paintings</a>
 	<a href="sketches.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>sketches</b></a>
     <a href="exhibit.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">exhibitions</a>
 	<a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">blog</a>
@@ -46,7 +46,7 @@
 <!-- navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navBar" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="prints.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">printmaking</a>
-  <a href="paintings.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><b>paintings</b></a>
+  <a href="paintings.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">paintings</a>
   <a href="sketches.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><b>sketches</b></a>
   <a href="exhibit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">exhibitions</a>
   <a href="blog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">blog</a>
@@ -55,31 +55,109 @@
   <a href="contact_me.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contact me</a>
 </div>
 
-<!--Modal gallery (Lightbox gallery) -->  <!-- sketches section -->
-<div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px">
-  <br>
-  <h1 class="w3-wide">sketches</h1>
-  <div class="images">
-    <img src="images/sketches/bee.jpg" alt="Bee (Fineliner)"/>
-	<img src="images/sketches/doublebass_player2.jpg" alt="ouble bass player (Pencil)"/>
-	<img src="images/sketches/nude1.jpg" alt="Nude#1 (Coloured pencil)"/>
-	<img src="images/sketches/shell-sketches-manchester-museum-fineliner.jpg" alt="Shells, Manchester Museum (Fineliner)"/>
-	<img src="images/sketches/pifco_light.jpg" alt="Pifco lamp (Pencil)"/>
-	<img src="images/sketches/national-football-museum.jpg" alt="National football museum (Fineliner)"/>
-	<img src="images/sketches/nudes_study.jpg" alt="Nudes study (Pastel pencil)"/>
-	<img src="images/sketches/Utensils.jpg" alt="Utensils (Fineliner"/>
-	<img src="images/sketches/figuredrawing.jpg" alt="Figure drawing (Charcoal)"/>
-  </div>
-  <div class="modal">
-    <span class="close"><i class="fas fa-times"></i></span>
-    <div class="modalContent">
-      <img src="" class="modalImg" />
-      <span class="modalTxt"></span>
-    </div>
-  </div>
- 
-<script src="modal.js"></script>
-<script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
+<!-- page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- sketches section -->
+  <div class="w3-padding-75 w3-center w3-margin-top w3-container">
+<h1>sketches</h1>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/bee.jpg" style="width:100%">
+<div class="w3-container">
+<h5>Bee (Fineliner)</h5>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/doublebass_player2.jpg" style="width:100%">
+<div class="w3-container">
+<h5>Double bass player (Pencil)</h5>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/nude1.jpg" style="width:100%">
+<div class="w3-container">
+<h5>Nude#1 (Coloured pencil)</h5>
+</div>
+</div>
+</div>
+
+</div>
+<div class="w3-row-padding w3-margin-top">
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/shell-sketches-manchester-museum-fineliner.jpg" style="width:100%">
+<div class="w3-container">
+<h5>Shells, Manchester Museum (Fineliner)</h5>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/pifco_light.jpg" style="width:100%">
+<div class="w3-container">
+<h5>Pifco lamp (Pencil)</h5>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/national-football-museum.jpg" style="width:100%">
+<div class="w3-container">
+<h5>National football museum (Fineliner)</h5>
+</div>
+</div>
+</div>
+
+</div>
+<div class="w3-row-padding w3-margin-top">
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/nudes_study.jpg" style="width:100%">
+<div class="w3-container">
+<h5>Nudes study (Pastel pencil)</h5>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/Utensils.jpg" style="width:100%">
+<div class="w3-container">
+<h5>Utensils (Fineliner)</h5>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+<img src="images/sketches/figuredrawing.jpg" style="width:100%">
+<div class="w3-container">
+<h5>Figure drawing (Charcoal)</h5>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<!-- end of page content -->
+</div>
+
 
 <!-- footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-white w3-xlarge">
