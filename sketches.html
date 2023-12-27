@@ -12,8 +12,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/nar_stylesheet.css">
-<link rel="stylesheet" href="css/gallerystyle.css">
 <link rel="stylesheet" href="css/darkmode.css">
+<link rel="stylesheet" href="css/navstyle.css">
+
+<!-- Lightbox CSS files-->	
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lightbox.css">
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" /> <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png"/>
 </head>
 <body>
@@ -41,7 +45,7 @@
     </div>
     </div>
 
-<script src="navBar.js"></script>
+<script src="js/navBar.js"></script>
 
 <!-- navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navBar" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
@@ -57,107 +61,54 @@
 
 <!-- page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- sketches section -->
+ 
+  <!-- printmaking section -->
   <div class="w3-padding-75 w3-center w3-margin-top w3-container">
-<h1>sketches</h1>
+		<h1>sketches</h1>
 </div>
-
-<div class="w3-row-padding w3-margin-top">
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/bee.jpg" style="width:100%">
-<div class="w3-container">
-<h5>Bee (Fineliner)</h5>
+  <!-- lightbox section -->
+<div class="container">
+	<div class="gallery">
+		<a href="images/sketches/bee.jpg" data-lightbox="sketches" data-title="Bee (Fineliner)">
+		<img src="images/sketches/bee.jpg">
+		</a>
+		
+		<a href="images/sketches/doublebass_player2.jpg" data-lightbox="sketches" data-title="Double bass player (Pencil)">
+		<img src="images/sketches/doublebass_player2.jpg">
+		</a>
+		
+		<a href="images/sketches/nude1.jpg" data-lightbox="sketches" data-title="Nude#1 (Coloured pencil)">
+		<img src="images/sketches/nude1.jpg">
+		</a>
+		
+		<a href="images/sketches/shell-sketches-manchester-museum-fineliner.jpg" data-lightbox="sketches" data-title="Shells, Manchester Museum (Fineliner)">
+		<img src="images/sketches/shell-sketches-manchester-museum-fineliner.jpg">
+		</a>
+			
+		<a href="images/sketches/pifco_light.jpg" data-lightbox="sketches" data-title="Pifco lamp (Pencil)">
+		<img src="images/sketches/pifco_light.jpg">
+		</a>
+		
+		<a href="images/sketches/national-football-museum.JPG" data-lightbox="sketches" data-title="National football museum (Fineliner)">
+		<img src="images/sketches/national-football-museum.JPG">
+		</a>
+		
+		<a href="images/sketches/nudes_study.jpg" data-lightbox="sketches" data-title="Nudes study (Pastel pencil)">
+		<img src="images/sketches/nudes_study.jpg">
+		</a>	
+		
+		<a href="images/sketches/utensils.jpg" data-lightbox="sketches" data-title="Utensils (Fineliner)">
+		<img src="images/sketches/utensils.jpg">
+		</a>
+		
+		<a href="images/sketches/figuredrawing.jpg" data-lightbox="sketches" data-title="Figure drawing (Charcoal)">
+		<img src="images/sketches/figuredrawing.jpg">
+		</a>		
+	</div>
 </div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/doublebass_player2.jpg" style="width:100%">
-<div class="w3-container">
-<h5>Double bass player (Pencil)</h5>
-</div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/nude1.jpg" style="width:100%">
-<div class="w3-container">
-<h5>Nude#1 (Coloured pencil)</h5>
-</div>
-</div>
-</div>
-
-</div>
-<div class="w3-row-padding w3-margin-top">
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/shell-sketches-manchester-museum-fineliner.jpg" style="width:100%">
-<div class="w3-container">
-<h5>Shells, Manchester Museum (Fineliner)</h5>
-</div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/pifco_light.jpg" style="width:100%">
-<div class="w3-container">
-<h5>Pifco lamp (Pencil)</h5>
-</div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/national-football-museum.JPG" style="width:100%">
-<div class="w3-container">
-<h5>National football museum (Fineliner)</h5>
-</div>
-</div>
-</div>
-
-</div>
-<div class="w3-row-padding w3-margin-top">
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/nudes_study.jpg" style="width:100%">
-<div class="w3-container">
-<h5>Nudes study (Pastel pencil)</h5>
-</div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/utensils.jpg" style="width:100%">
-<div class="w3-container">
-<h5>Utensils (Fineliner)</h5>
-</div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="images/sketches/figuredrawing.jpg" style="width:100%">
-<div class="w3-container">
-<h5>Figure drawing (Charcoal)</h5>
-</div>
-</div>
-</div>
-
-</div>
-
-
+	<script src="lightbox-plus-jquery.min.js"></script>
 <!-- end of page content -->
 </div>
-
 
 <!-- footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-white w3-xlarge">
